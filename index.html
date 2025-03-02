@@ -129,7 +129,7 @@
                 const todayData = data.data[todayIndex];
                 if (!todayData) return;
                 
-                const sehriTime = new Date(new Date().setHours(...todayData.timings.Fajr.split(" ")[0].split(":").map(Number) ) - 13 * 60000).toTimeString().slice(0, 5);
+                const sehriTime = new Date(new Date().setHours(...todayData.timings.Fajr.split(" ")[0].split(":").map(Number) ) - 10 * 60000).toTimeString().slice(0, 5);
                 const iftarTime = todayData.timings.Maghrib.split(" ")[0]; 
 
 
